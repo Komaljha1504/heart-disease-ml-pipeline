@@ -3,3 +3,4 @@ __pycache__/
 .venv/
 results/build_log.txt
 conclusion.md
+results_view/

@@ -17,7 +17,7 @@ md("""
 
 **Question.** Given 13 routine clinical measurements, can we predict whether a patient has angiographic heart disease, and which measurements matter most?
 
-**Data.** UCI *Heart Disease* (Cleveland clinic), 303 patients. Public domain, from the UCI ML Repository (id 45). The original target `num` is 0 (no disease) to 4 (severity); following the usual convention I treat any value above 0 as **disease**.
+**Data.** UCI *Heart Disease* (Cleveland clinic), 303 patients. Licensed CC BY 4.0, from the UCI ML Repository (id 45). The original target `num` is 0 (no disease) to 4 (severity); following the usual convention I treat any value above 0 as **disease**.
 
 **Approach, in one line each**
 1. Look at the data first (balance, missing values, distributions, correlations).
