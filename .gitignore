@@ -4,3 +4,4 @@ __pycache__/
 results/build_log.txt
 conclusion.md
 results_view/
+results/st_stdout.txt

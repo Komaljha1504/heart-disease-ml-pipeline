@@ -1,5 +1,7 @@
 # Heart Disease Prediction: a Tabular ML Pipeline
 
+**Live demo:** _added after deployment_ (try a patient profile, see why the model gives its estimate, and browse the results)
+
 An end-to-end, leak-free machine-learning pipeline on the UCI **Heart Disease** (Cleveland) dataset: exploratory analysis, preprocessing, feature engineering, a **5-model comparison under identical cross-validation**, **nested-CV tuning**, and an explanation of what the final model relies on. The full narrative is in the notebook: [`notebooks/heart_disease_pipeline.ipynb`](notebooks/heart_disease_pipeline.ipynb).
 
 > **Educational project. Not medical advice.** 303 patients from a single clinic.
@@ -55,6 +57,12 @@ python build_notebook.py        # builds and executes the notebook, writes figur
 ```
 
 Or open `notebooks/heart_disease_pipeline.ipynb` directly: every output is already saved in it.
+
+Interactive demo (patient form, per-factor explanation, results dashboard):
+
+```bash
+streamlit run app/streamlit_app.py
+```
 
 ## Data and credits
 
