@@ -1,0 +1,294 @@
+{
+  "dataset": "UCI Heart Disease (Cleveland), 303 patients, target = any disease",
+  "cv": "5-fold stratified x 3 repeats (15 splits), identical for every model",
+  "comparison_with_engineered_features": {
+    "Logistic regression": {
+      "accuracy": [
+        0.8579,
+        0.0516
+      ],
+      "precision": [
+        0.8769,
+        0.0589
+      ],
+      "recall": [
+        0.8055,
+        0.0957
+      ],
+      "f1": [
+        0.8365,
+        0.0645
+      ],
+      "roc_auc": [
+        0.9198,
+        0.0376
+      ]
+    },
+    "SVM (RBF)": {
+      "accuracy": [
+        0.8393,
+        0.0534
+      ],
+      "precision": [
+        0.8514,
+        0.062
+      ],
+      "recall": [
+        0.789,
+        0.0922
+      ],
+      "f1": [
+        0.8164,
+        0.0672
+      ],
+      "roc_auc": [
+        0.9063,
+        0.0428
+      ]
+    },
+    "Random forest": {
+      "accuracy": [
+        0.8382,
+        0.0595
+      ],
+      "precision": [
+        0.857,
+        0.0581
+      ],
+      "recall": [
+        0.7769,
+        0.1159
+      ],
+      "f1": [
+        0.8111,
+        0.0797
+      ],
+      "roc_auc": [
+        0.9116,
+        0.0428
+      ]
+    },
+    "Gradient boosting": {
+      "accuracy": [
+        0.803,
+        0.0372
+      ],
+      "precision": [
+        0.8106,
+        0.0438
+      ],
+      "recall": [
+        0.748,
+        0.0866
+      ],
+      "f1": [
+        0.7748,
+        0.0507
+      ],
+      "roc_auc": [
+        0.8795,
+        0.046
+      ]
+    },
+    "XGBoost": {
+      "accuracy": [
+        0.8271,
+        0.0391
+      ],
+      "precision": [
+        0.8406,
+        0.0554
+      ],
+      "recall": [
+        0.7769,
+        0.0928
+      ],
+      "f1": [
+        0.8027,
+        0.0511
+      ],
+      "roc_auc": [
+        0.8975,
+        0.0423
+      ]
+    }
+  },
+  "comparison_without_engineered_features": {
+    "Logistic regression": {
+      "accuracy": [
+        0.8591,
+        0.0502
+      ],
+      "precision": [
+        0.8818,
+        0.0627
+      ],
+      "recall": [
+        0.8031,
+        0.0902
+      ],
+      "f1": [
+        0.8376,
+        0.0626
+      ],
+      "roc_auc": [
+        0.9208,
+        0.0368
+      ]
+    },
+    "SVM (RBF)": {
+      "accuracy": [
+        0.8404,
+        0.0531
+      ],
+      "precision": [
+        0.8427,
+        0.0607
+      ],
+      "recall": [
+        0.8034,
+        0.0912
+      ],
+      "f1": [
+        0.8201,
+        0.0664
+      ],
+      "roc_auc": [
+        0.9053,
+        0.0389
+      ]
+    },
+    "Random forest": {
+      "accuracy": [
+        0.8437,
+        0.0457
+      ],
+      "precision": [
+        0.8504,
+        0.0494
+      ],
+      "recall": [
+        0.8033,
+        0.0942
+      ],
+      "f1": [
+        0.8227,
+        0.0584
+      ],
+      "roc_auc": [
+        0.9157,
+        0.0383
+      ]
+    },
+    "Gradient boosting": {
+      "accuracy": [
+        0.8051,
+        0.0466
+      ],
+      "precision": [
+        0.8007,
+        0.0612
+      ],
+      "recall": [
+        0.772,
+        0.0762
+      ],
+      "f1": [
+        0.7834,
+        0.053
+      ],
+      "roc_auc": [
+        0.878,
+        0.0461
+      ]
+    },
+    "XGBoost": {
+      "accuracy": [
+        0.8271,
+        0.0406
+      ],
+      "precision": [
+        0.8341,
+        0.0578
+      ],
+      "recall": [
+        0.7839,
+        0.0836
+      ],
+      "f1": [
+        0.8046,
+        0.0502
+      ],
+      "roc_auc": [
+        0.8954,
+        0.0374
+      ]
+    }
+  },
+  "engineered_feature_avg_auc_change": -0.0001,
+  "tuned_nested_cv": {
+    "Logistic regression": {
+      "accuracy": [
+        0.8601,
+        0.0491
+      ],
+      "precision": [
+        0.8829,
+        0.0534
+      ],
+      "recall": [
+        0.8031,
+        0.0939
+      ],
+      "f1": [
+        0.8381,
+        0.063
+      ],
+      "roc_auc": [
+        0.9193,
+        0.0357
+      ]
+    },
+    "Random forest": {
+      "accuracy": [
+        0.8403,
+        0.056
+      ],
+      "precision": [
+        0.8739,
+        0.0665
+      ],
+      "recall": [
+        0.7649,
+        0.1037
+      ],
+      "f1": [
+        0.8118,
+        0.0734
+      ],
+      "roc_auc": [
+        0.9102,
+        0.0406
+      ]
+    }
+  },
+  "best_params": {
+    "Logistic regression": {
+      "clf__C": 0.3
+    },
+    "Random forest": {
+      "clf__max_depth": 5,
+      "clf__max_features": "sqrt",
+      "clf__min_samples_leaf": 1
+    }
+  },
+  "final_model": "Logistic regression",
+  "top_features": {
+    "ca": 0.0462,
+    "cp": 0.0405,
+    "thal": 0.0233,
+    "sex": 0.0178,
+    "thalach": 0.0088,
+    "oldpeak": 0.0086
+  }
+}
